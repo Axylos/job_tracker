@@ -1,0 +1,11 @@
+version: '3.4'
+
+services:
+  web:
+    image: drackenov/jobtracker_client
+    build: ./client
+    volumes:
+      - ./client/src:/usr/src/app/src
+    container_name: 'jobtracker_app'
+    ports:
+      - 8000:8000
