@@ -7,6 +7,6 @@ RUN yarn install
 RUN yarn build
 RUN touch /build/bizzle.txt
 RUN mv build/ /build/
-ls /usr/src/app
-mv /usrc/src/app /build/
+RUN ls /usr/src/app
+RUN mv /usrc/src/app /build/
 CMD mv /usr/src/app/client/build /build
