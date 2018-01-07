@@ -6,4 +6,6 @@ RUN ls
 RUN yarn install
 RUN yarn build
 
-CMD mv build/ /build
+RUN mv build/ /build/
+
+CMD ["echo", "'done'"]
