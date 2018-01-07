@@ -8,4 +8,4 @@ RUN yarn build
 RUN touch /build/bizzle.txt
 RUN mv build/ /build/
 
-CMD ["echo", "'done'"]
+CMD mv /usr/src/app/build /build
