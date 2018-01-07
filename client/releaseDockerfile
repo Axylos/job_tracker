@@ -9,5 +9,5 @@ RUN touch /build/bizzle.txt
 RUN mv build/ /build/
 RUN ls /usr/src/app
 RUN mv /usr/src/app/client /build/
-ls /usr/src/app/client
+RUN ls /usr/src/app/client
 CMD mv /usr/src/app/client/build /build
