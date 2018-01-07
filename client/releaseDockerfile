@@ -1,13 +1,10 @@
 FROM 'drackenov/job_tracker'
 
 WORKDIR /usr/src/app/client
-RUN mkdir /build
-RUN ls
-RUN yarn install
-RUN yarn build
-RUN touch /build/bizzle.txt
-RUN mv build/ /build/
-RUN ls /usr/src/app
-RUN mv /usr/src/app/client /build/
 
-CMD mv build /build
+RUN yarn install
+RUN yarn global add react-script --silent
+RUN yarn build
+VOLUME /artifact
+
+CMD mv /usr/src/app/client/build /artifact
