@@ -5,7 +5,7 @@ RUN mkdir /build
 RUN ls
 RUN yarn install
 RUN yarn build
-
+RUN touch /build/bizzle.txt
 RUN mv build/ /build/
 
 CMD ["echo", "'done'"]
