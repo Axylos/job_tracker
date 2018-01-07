@@ -1,0 +1,9 @@
+FROM 'drackenov/job_tracker'
+
+WORKDIR /usr/src/app/client
+RUN mkdir /build
+RUN ls
+RUN yarn install
+RUN yarn build
+
+CMD mv build/ /build
