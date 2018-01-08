@@ -5,7 +5,9 @@ WORKDIR /usr/src/app/client
 RUN yarn install
 RUN yarn global add react-script --silent
 RUN yarn build
+RUN ls
 VOLUME /artifact
 RUN touch /artifact/arti.txt
+RUN cp build /artiface
 RUN ls /artifact
-CMD yarn start
+CMD ls
