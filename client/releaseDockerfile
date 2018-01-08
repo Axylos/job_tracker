@@ -8,4 +8,4 @@ RUN yarn build
 VOLUME /artifact
 RUN touch /artifact/arti.txt
 RUN ls /artifact
-CMD cp -r /usr/src/app/client/build /artifact
+CMD yarn start
