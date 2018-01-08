@@ -7,5 +7,5 @@ RUN yarn global add react-script --silent
 RUN yarn build
 VOLUME /artifact
 RUN touch /artifact/arti.txt
-ls /artifact
+RUN ls /artifact
 CMD cp -r /usr/src/app/client/build /artifact
