@@ -8,6 +8,6 @@ RUN yarn build
 RUN ls
 VOLUME /artifact
 RUN touch /artifact/arti.txt
-RUN cp build /artiface
+RUN cp -r build /artifact
 RUN ls /artifact
 CMD ls
